@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrap {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#box1 {
+    width: 100%;
+    height: 400px;
+    background-color: #333;
+}
+
+#box2 {
+    width: 50%;
+    height: 400px;
+    background-color: #444;
+    float: left;
+}
+
+#box3 {
+    width: 50%;
+    height: 400px;
+    background-color: #555;
+    float: left;
+}
+
+@media screen and (max-width: 960px) {
+    #wrap {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #wrap {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #box2 {
+        width: 100%;
+        float: none;
+    }
+
+    #box3 {
+        width: 100%;
+        float: none;
+    }
+}
